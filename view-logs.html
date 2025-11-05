@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>View Logs</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <!-- 🔹 Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="./assets/logo.png" alt="Drone Logo" />
+      <span>Drone Monitor</span>
+    </div>
+    <div class="nav-links">
+      <a href="index.html" class="nav-btn">View Config</a>
+      <a href="temperature-form.html" class="nav-btn">Temperature Log</a>
+      <a href="view-logs.html" class="nav-btn active">View Logs</a>
+    </div>
+  </nav>
+
+  <!-- 🔹 Content -->
+  <main class="content">
+    <h2>Drone Logs</h2>
+
+    <table id="logTable" border="1">
+      <tr>
+        <th>Created</th>
+        <th>Country</th>
+        <th>Drone ID</th>
+        <th>Drone Name</th>
+        <th>Celsius</th>
+      </tr>
+    </table>
+  </main>
+
+  <script src="./js/logs.js"></script>
+</body>
+</html>

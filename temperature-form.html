@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temperature Log</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <!-- 🔹 Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <span>Drone Monitor</span>
+    </div>
+    <div class="nav-links">
+      <a href="index.html" class="nav-btn">View Config</a>
+      <a href="temperature-form.html" class="nav-btn active">Temperature Log</a>
+      <a href="view-logs.html" class="nav-btn">View Logs</a>
+    </div>
+  </nav>
+
+  <!-- 🔹 Content -->
+  <main class="content">
+    <h2>Temperature Log Form</h2>
+
+    <form id="logForm">
+      <label for="temperature">Temperature (°C):</label>
+      <input type="number" id="temperature" name="temperature" required step="0.1" />
+      <br /><br />
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <script src="./js/temperature.js"></script>
+</body>
+</html>

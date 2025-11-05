@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drone Monitor</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <!-- Background Decoration -->
+  <div class="bg-decoration">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
+
+  <div class="container">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <div class="logo-icon">🚁</div>
+        <span>Drone Monitor</span>
+      </div>
+      <div class="nav-links">
+        <a href="#" class="nav-btn" data-page="config">View Config</a>
+        <a href="#" class="nav-btn" data-page="temperature">Temperature Log</a>
+        <a href="#" class="nav-btn" data-page="logs">View Logs</a>
+      </div>
+    </nav>
+
+    <!-- Content Area -->
+    <div class="content-wrapper" id="contentArea"></div>
+  </div>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
